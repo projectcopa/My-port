@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Clean Portfolio - Premium futuristic dark frontend developer portfolio website." />
+  <title>Clean Portfolio — Frontend Developer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Scroll Progress -->
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <!-- Loader -->
+  <div class="loader" id="loader">
+    <div class="loader-box">
+      <span class="loader-logo">CP</span>
+      <p>Loading Clean Portfolio</p>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="#home" class="logo">
+        <span>Clean</span> Portfolio
+      </a>
+
+      <button class="menu-btn" id="menuBtn" aria-label="Open menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <div class="nav-links" id="navLinks">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+      <div class="nav-actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">☀</button>
+        <a href="#contact" class="btn btn-small">Hire Me</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero section" id="home">
+      <div class="hero-bg">
+        <span class="grid-layer"></span>
+        <span class="glow glow-1"></span>
+        <span class="glow glow-2"></span>
+        <span class="smoke smoke-1"></span>
+        <span class="smoke smoke-2"></span>
+      </div>
+
+      <div class="container hero-grid">
+        <div class="hero-content reveal">
+          <p class="eyebrow">Modern Developer Portfolio</p>
+          <h1>
+            Clean <span>Portfolio</span>
+          </h1>
+          <h2>
+            <span id="typingText"></span>
+            <span class="cursor">|</span>
+          </h2>
+          <p class="hero-text">
+            I build premium, responsive, animated, and user-friendly websites
+            using clean frontend technologies and modern UI design systems.
+          </p>
+
+          <div class="hero-buttons">
+            <a href="#projects" class="btn">View Projects</a>
+            <a href="#contact" class="btn btn-outline">Contact Me</a>
+            <button class="btn btn-dark" id="downloadCV">Download CV</button>
+          </div>
+
+          <div class="socials">
+            <a href="#" aria-label="GitHub">GH</a>
+            <a href="#" aria-label="LinkedIn">IN</a>
+            <a href="#" aria-label="Instagram">IG</a>
+            <a href="#" aria-label="Twitter">X</a>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal">
+          <div class="profile-card float-card" id="tiltCard">
+            <div class="profile-orbit"></div>
+            <div class="profile-photo">
+              <div class="avatar-face">
+                <span class="avatar-eye left"></span>
+                <span class="avatar-eye right"></span>
+                <span class="avatar-smile"></span>
+              </div>
+            </div>
+            <div class="profile-info">
+              <h3>Frontend Developer</h3>
+              <p>HTML • CSS • JavaScript • React</p>
+            </div>
+          </div>
+
+          <div class="code-card code-card-main">
+            <div class="code-top">
+              <span></span><span></span><span></span>
+              <strong>style.css</strong>
+            </div>
+            <pre><code>.portfolio {
+  background: #050505;
+  color: #ffffff;
+  animation: premium 3s ease;
+}
+
+.card:hover {
+  border-color: #ffd84d;
+  transform: translateY(-8px);
+}</code></pre>
+          </div>
+
+          <div class="mini-panel panel-1">
+            <strong>20+</strong>
+            <span>Projects</span>
+          </div>
+
+          <div class="mini-panel panel-2">
+            <strong>100%</strong>
+            <span>Responsive</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="section" id="about">
+      <div class="container about-grid">
+        <div class="section-title reveal">
+          <p class="eyebrow">About Me</p>
+          <h2>Developer with clean design thinking.</h2>
+        </div>
+
+        <div class="about-card reveal">
+          <p>
+            I am a frontend developer focused on creating modern websites with
+            smooth animations, strong layout structure, clean code, and premium
+            user experience. I enjoy turning ideas into real web interfaces that
+            look impressive and work perfectly on every device.
+          </p>
+
+          <div class="about-stats">
+            <div>
+              <strong><span class="counter" data-target="2">0</span>+</strong>
+              <span>Years Learning</span>
+            </div>
+            <div>
+              <strong><span class="counter" data-target="20">0</span>+</strong>
+              <span>Projects</span>
+            </div>
+            <div>
+              <strong><span class="counter" data-target="15">0</span>+</strong>
+              <span>UI Concepts</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="section soft-section" id="skills">
+      <div class="container">
+        <div class="section-title center reveal">
+          <p class="eyebrow">Skills</p>
+          <h2>Frontend skills with modern workflow.</h2>
+        </div>
+
+        <div class="skills-grid">
+          <div class="skill-card reveal" data-progress="95">
+            <div class="skill-head">
+              <span>HTML5</span>
+              <strong>95%</strong>
+            </div>
+            <div class="progress"><span></span></div>
+          </div>
+
+          <div class="skill-card reveal" data-progress="92">
+            <div class="skill-head">
+              <span>CSS3</span>
+              <strong>92%</strong>
+            </div>
+            <div class="progress"><span></span></div>
+          </div>
+
+          <div class="skill-card reveal" data-progress="88">
+            <div class="skill-head">
+              <span>JavaScript</span>
+              <strong>88%</strong>
+            </div>
+            <div class="progress"><span></span></div>
+          </div>
+
+          <div class="skill-card reveal" data-progress="80">
+            <div class="skill-head">
+              <span>React.js</span>
+              <strong>80%</strong>
+            </div>
+            <div class="progress"><span></span></div>
+          </div>
+
+          <div class="skill-card reveal" data-progress="86">
+            <div class="skill-head">
+              <span>Tailwind CSS</span>
+              <strong>86%</strong>
+            </div>
+            <div class="progress"><span></span></div>
+          </div>
+
+          <div class="skill-card reveal" data-progress="82">
+            <div class="skill-head">
+              <span>Bootstrap</span>
+              <strong>82%</strong>
+            </div>
+            <div class="progress"><span></span></div>
+          </div>
+
+          <div class="skill-card reveal" data-progress="84">
+            <div class="skill-head">
+              <span>GitHub</span>
+              <strong>84%</strong>
+            </div>
+            <div class="progress"><span></span></div>
+          </div>
+
+          <div class="skill-card reveal" data-progress="90">
+            <div class="skill-head">
+              <span>Responsive Design</span>
+              <strong>90%</strong>
+            </div>
+            <div class="progress"><span></span></div>
+          </div>
+
+          <div class="skill-card reveal" data-progress="78">
+            <div class="skill-head">
+              <span>UI/UX Design</span>
+              <strong>78%</strong>
+            </div>
+            <div class="progress"><span></span></div>
+          </div>
+
+          <div class="skill-card reveal" data-progress="76">
+            <div class="skill-head">
+              <span>API Integration</span>
+              <strong>76%</strong>
+            </div>
+            <div class="progress"><span></span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio Showcase -->
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section-title center reveal">
+          <p class="eyebrow">Portfolio Showcase</p>
+          <h2>Selected projects with premium UI.</h2>
+        </div>
+
+        <div class="filter-buttons reveal">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="website">Website</button>
+          <button class="filter-btn" data-filter="app">App</button>
+          <button class="filter-btn" data-filter="ui">UI Design</button>
+        </div>
+
+        <div class="projects-grid">
+          <article class="project-card reveal" data-category="website">
+            <div class="project-image">
+              <span>01</span>
+            </div>
+            <div class="project-content">
+              <p>Website</p>
+              <h3>AI Resume Builder</h3>
+              <span class="desc">Live preview resume builder with modern templates and export options.</span>
+              <div class="tags">
+                <span>HTML</span><span>CSS</span><span>JS</span>
+              </div>
+              <div class="project-actions">
+                <a href="#" class="btn btn-small">Live Preview</a>
+                <a href="#" class="btn btn-small btn-outline">GitHub</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal" data-category="app">
+            <div class="project-image">
+              <span>02</span>
+            </div>
+            <div class="project-content">
+              <p>App</p>
+              <h3>Smart Service Dashboard</h3>
+              <span class="desc">Organized digital service dashboard for students and public users.</span>
+              <div class="tags">
+                <span>Grid</span><span>JS</span><span>UI</span>
+              </div>
+              <div class="project-actions">
+                <a href="#" class="btn btn-small">Live Preview</a>
+                <a href="#" class="btn btn-small btn-outline">GitHub</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal" data-category="ui">
+            <div class="project-image">
+              <span>03</span>
+            </div>
+            <div class="project-content">
+              <p>UI Design</p>
+              <h3>Dark Portfolio Concept</h3>
+              <span class="desc">Premium developer landing page with glow effects and dark UI cards.</span>
+              <div class="tags">
+                <span>Design</span><span>CSS</span><span>Motion</span>
+              </div>
+              <div class="project-actions">
+                <a href="#" class="btn btn-small">Live Preview</a>
+                <a href="#" class="btn btn-small btn-outline">GitHub</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal" data-category="website">
+            <div class="project-image">
+              <span>04</span>
+            </div>
+            <div class="project-content">
+              <p>Website</p>
+              <h3>Tourism Information Site</h3>
+              <span class="desc">Responsive travel information website with category-based places.</span>
+              <div class="tags">
+                <span>HTML</span><span>CSS</span><span>Maps</span>
+              </div>
+              <div class="project-actions">
+                <a href="#" class="btn btn-small">Live Preview</a>
+                <a href="#" class="btn btn-small btn-outline">GitHub</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal" data-category="app">
+            <div class="project-image">
+              <span>05</span>
+            </div>
+            <div class="project-content">
+              <p>App</p>
+              <h3>Image Resizer Tool</h3>
+              <span class="desc">Client-side image compressor with preview and download feature.</span>
+              <div class="tags">
+                <span>Canvas</span><span>JS</span><span>Tool</span>
+              </div>
+              <div class="project-actions">
+                <a href="#" class="btn btn-small">Live Preview</a>
+                <a href="#" class="btn btn-small btn-outline">GitHub</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal" data-category="ui">
+            <div class="project-image">
+              <span>06</span>
+            </div>
+            <div class="project-content">
+              <p>UI Design</p>
+              <h3>Futuristic Product Page</h3>
+              <span class="desc">Luxury landing page design for a modern smart product concept.</span>
+              <div class="tags">
+                <span>UI</span><span>Landing</span><span>Glow</span>
+              </div>
+              <div class="project-actions">
+                <a href="#" class="btn btn-small">Live Preview</a>
+                <a href="#" class="btn btn-small btn-outline">GitHub</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Projects -->
+    <section class="section soft-section">
+      <div class="container featured-grid">
+        <div class="section-title reveal">
+          <p class="eyebrow">Featured Project</p>
+          <h2>Interactive portfolio system with smooth UI.</h2>
+          <p>
+            This section highlights your best project with a large premium
+            layout, clear description, and modern code-inspired visual card.
+          </p>
+          <a href="#contact" class="btn">Discuss Project</a>
+        </div>
+
+        <div class="featured-card reveal">
+          <div class="code-top">
+            <span></span><span></span><span></span>
+            <strong>app.js</strong>
+          </div>
+          <pre><code>const portfolio = {
+  design: "premium dark",
+  animation: true,
+  responsive: true,
+  goal: "professional impact"
+};
+
+portfolio.launch();</code></pre>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section class="section">
+      <div class="container">
+        <div class="section-title center reveal">
+          <p class="eyebrow">Services</p>
+          <h2>What I can build for you.</h2>
+        </div>
+
+        <div class="services-grid">
+          <article class="service-card reveal">
+            <span>01</span>
+            <h3>Website Design</h3>
+            <p>Clean, responsive, and attractive websites for personal, college, or business use.</p>
+          </article>
+
+          <article class="service-card reveal">
+            <span>02</span>
+            <h3>Frontend Development</h3>
+            <p>HTML, CSS, JavaScript, and React-based frontend interfaces with modern design.</p>
+          </article>
+
+          <article class="service-card reveal">
+            <span>03</span>
+            <h3>Landing Pages</h3>
+            <p>High-converting, animated, premium landing pages for products and services.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Timeline -->
+    <section class="section soft-section">
+      <div class="container">
+        <div class="section-title center reveal">
+          <p class="eyebrow">Timeline</p>
+          <h2>Experience & education journey.</h2>
+        </div>
+
+        <div class="timeline">
+          <div class="timeline-item reveal">
+            <span>2026</span>
+            <h3>Frontend Portfolio Projects</h3>
+            <p>Created multiple modern websites using HTML, CSS, JavaScript, and responsive UI design.</p>
+          </div>
+
+          <div class="timeline-item reveal">
+            <span>2025</span>
+            <h3>ITI COPA Learning</h3>
+            <p>Studied computer operation, programming assistant basics, office tools, and web development.</p>
+          </div>
+
+          <div class="timeline-item reveal">
+            <span>2024</span>
+            <h3>Web Design Practice</h3>
+            <p>Started building practical websites, landing pages, tools, and project report layouts.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="section">
+      <div class="container">
+        <div class="section-title center reveal">
+          <p class="eyebrow">Testimonials</p>
+          <h2>What people say.</h2>
+        </div>
+
+        <div class="testimonials-grid">
+          <article class="testimonial-card reveal">
+            <p>“A very clean and premium portfolio concept. The dark UI and yellow branding look professional.”</p>
+            <strong>Rahul S.</strong>
+            <span>Developer</span>
+          </article>
+
+          <article class="testimonial-card reveal">
+            <p>“The animation, code cards, and project sections make this site perfect for a college project.”</p>
+            <strong>Ananya P.</strong>
+            <span>Designer</span>
+          </article>
+
+          <article class="testimonial-card reveal">
+            <p>“The website feels modern, responsive, and unique. Great layout for a frontend developer.”</p>
+            <strong>Rohan M.</strong>
+            <span>Student</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section contact-section" id="contact">
+      <div class="container contact-grid">
+        <div class="section-title reveal">
+          <p class="eyebrow">Contact Me</p>
+          <h2>Have a project? Let’s build it clean.</h2>
+          <p>
+            Send me your details and I will connect with you for website,
+            portfolio, landing page, or frontend project development.
+          </p>
+
+          <div class="contact-info">
+            <a href="mailto:hello@example.com">hello@example.com</a>
+            <a href="tel:+910000000000">+91 00000 00000</a>
+          </div>
+        </div>
+
+        <form class="contact-form reveal" id="contactForm">
+          <label>
+            Name
+            <input type="text" placeholder="Your full name" required />
+          </label>
+
+          <label>
+            Email
+            <input type="email" placeholder="Your email address" required />
+          </label>
+
+          <label>
+            Subject
+            <input type="text" placeholder="Project subject" required />
+          </label>
+
+          <label>
+            Message
+            <textarea placeholder="Write your message..." required></textarea>
+          </label>
+
+          <button class="btn" type="submit">Send Message</button>
+          <p class="form-message" id="formMessage"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <a href="#home" class="logo">
+          <span>Clean</span> Portfolio
+        </a>
+        <p>
+          Premium dark developer portfolio website with animated UI,
+          modern project cards, and responsive layout.
+        </p>
+      </div>
+
+      <div>
+        <h3>Quick Links</h3>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+      <div>
+        <h3>Social</h3>
+        <a href="#">GitHub</a>
+        <a href="#">LinkedIn</a>
+        <a href="#">Instagram</a>
+        <a href="#">Twitter / X</a>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <p>© 2026 Clean Portfolio. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Scroll Top -->
+  <button class="scroll-top" id="scrollTop" aria-label="Scroll to top">↑</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
